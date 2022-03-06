@@ -1,0 +1,14 @@
+From selenium import webdriver
+From selenium.webdriver.support.ui import WebDriverWait
+#buka webdriver (chrome)
+browser=webdriver.Chrome()
+browser.get(https://qa.putraprima.id/)
+#mengklik field "Masukkan Angka"
+browser.find_element_by_id(“input#input.form-control”)
+#menginputkan angka 3
+input.send_keys(“"3"”)
+#menekan tombol Hitung Faktorial
+submit.click()
+wait = WebDriverWait(browser, 5)
+#hasil ditampilkan
+result.show();
